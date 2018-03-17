@@ -34,7 +34,19 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // --------------------------------------------------------------------------------
 
-// Do not edit. File generated from optable.xml on 31-Jan-2016 02:03 PM
+
+
+
+
+
+
+
+
+
+
+
+
+// Do not edit. File generated from optable.xml on 17-Mar-2018 01:10 PM
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,7 +55,7 @@ using System.Text;
 #pragma warning disable 1591
 namespace SharpDisasm.Udis86
 {
-    internal static class InstructionTables
+internal static class InstructionTables
     {
         #region Lookup Tables
         public const int INVALID = 0;
@@ -6938,5 +6950,6 @@ namespace SharpDisasm.Udis86
     }
     
     #endregion
+
 }
 #pragma warning restore 1591

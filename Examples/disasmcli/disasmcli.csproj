@@ -29,12 +29,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SharpDisasm\SharpDisasm.csproj">
-      <Project>{d828384e-0251-44c4-8bf2-3608fd3dd2cd}</Project>
-      <Name>SharpDisasm</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="instructions64.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

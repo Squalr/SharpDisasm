@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Xml.Linq;
@@ -142,20 +142,20 @@ namespace SharpDisasm.Tests
                 // ssef2, ssef3, sse66
                 {"sse", new Dictionary<string, string>() {
                     {"none", "00"},
-                    {"f2"   , "01"}, 
-                    {"f3"   , "02"}, 
+                    {"f2"   , "01"},
+                    {"f3"   , "02"},
                     {"66"   , "03"}
                 }},
                 // /mod=
                 {"mod", new Dictionary<string, string>() {
-                    {"!11"   , "00"}, 
+                    {"!11"   , "00"},
                     {"11"    , "01"}
                 }},
 
                 // /m=, /o=, /a=
-                {"mode", new Dictionary<string, string>() { 
-                    {"16"    , "00"}, 
-                    {"32"    , "01"}, 
+                {"mode", new Dictionary<string, string>() {
+                    {"16"    , "00"},
+                    {"32"    , "01"},
                     {"64"    , "02"}
                 }},
 
@@ -166,21 +166,21 @@ namespace SharpDisasm.Tests
                 }},
 
                 {"vex", new Dictionary<string, string>() {
-                    {"none"   , "00"}, 
-                    {"0f"     , "01"}, 
-                    {"0f38"   , "02"}, 
+                    {"none"   , "00"},
+                    {"0f"     , "01"},
+                    {"0f38"   , "02"},
                     {"0f3a"   , "03"},
-                    {"66"     , "04"}, 
-                    {"66_0f"  , "05"}, 
-                    {"66_0f38", "06"}, 
+                    {"66"     , "04"},
+                    {"66_0f"  , "05"},
+                    {"66_0f38", "06"},
                     {"66_0f3a", "07"},
-                    {"f3"     , "08"}, 
-                    {"f3_0f"  , "09"}, 
-                    {"f3_0f38", "0a"}, 
+                    {"f3"     , "08"},
+                    {"f3_0f"  , "09"},
+                    {"f3_0f38", "0a"},
                     {"f3_0f3a", "0b"},
-                    {"f2"     , "0c"}, 
-                    {"f2_0f"  , "0d"}, 
-                    {"f2_0f38", "0e"}, 
+                    {"f2"     , "0c"},
+                    {"f2_0f"  , "0d"},
+                    {"f2_0f38", "0e"},
                     {"f2_0f3a", "0f"},
                 }},
             };
@@ -921,7 +921,7 @@ namespace SharpDisasm.Tests
                 {"Jv"       , new string[] {    "OP_J"        , "SZ_V"     }},
                 {"Jz"       , new string[] {    "OP_J"        , "SZ_Z"     }},
                 {"Jb"       , new string[] {    "OP_J"        , "SZ_B"     }},
-                {"R"        , new string[] {    "OP_R"        , "SZ_RDQ"   }}, 
+                {"R"        , new string[] {    "OP_R"        , "SZ_RDQ"   }},
                 {"C"        , new string[] {    "OP_C"        , "SZ_NA"    }},
                 {"D"        , new string[] {    "OP_D"        , "SZ_NA"    }},
                 {"S"        , new string[] {    "OP_S"        , "SZ_W"     }},
@@ -1022,21 +1022,21 @@ namespace SharpDisasm.Tests
             #endregion
 
             // opcode prefix dictionary
-            public static Dictionary<string, string> PrefixDict = new Dictionary<string, string>() 
-            { 
-                {"rep"      , "P_str"},   
-                {"repz"     , "P_strz"},   
-                {"aso"      , "P_aso"},   
-                {"oso"      , "P_oso"},   
-                {"rexw"     , "P_rexw"}, 
-                {"rexb"     , "P_rexb"},  
-                {"rexx"     , "P_rexx"},  
+            public static Dictionary<string, string> PrefixDict = new Dictionary<string, string>()
+            {
+                {"rep"      , "P_str"},
+                {"repz"     , "P_strz"},
+                {"aso"      , "P_aso"},
+                {"oso"      , "P_oso"},
+                {"rexw"     , "P_rexw"},
+                {"rexb"     , "P_rexb"},
+                {"rexx"     , "P_rexx"},
                 {"rexr"     , "P_rexr"},
                 {"vexl"     , "P_vexl"},
                 {"vexw"     , "P_vexw"},
                 {"seg"      , "P_seg"},
-                {"inv64"    , "P_inv64"}, 
-                {"def64"    , "P_def64"}, 
+                {"inv64"    , "P_inv64"},
+                {"def64"    , "P_def64"},
                 {"cast"     , "P_cast"}
             };
 
@@ -1271,7 +1271,7 @@ namespace SharpDisasm.Tests
 
             UdOpcodeTables.LogEnabled = false; // outputs summary to log file if true
             UdOpcodeTables tables = new UdOpcodeTables(xml);
-            
+
             UdItabGenerator gen = new UdItabGenerator(tables);
 
             gen.GenCSharpCode();
